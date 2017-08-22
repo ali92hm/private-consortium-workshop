@@ -4,11 +4,11 @@
 
 ### Download Go-Ethereum
 
-* You can [download installers] (https://ethereum.github.io/go-ethereum/downloads/)
-* Or install via [package managers] (https://ethereum.github.io/go-ethereum/install/)
+* You can [download installers](https://ethereum.github.io/go-ethereum/downloads/)
+* Or install via [package managers](https://ethereum.github.io/go-ethereum/install/)
 
 ### Download Ethereum Waller
-* [Ethereum Wallet] (https://www.ethereum.org/)
+* [Ethereum Wallet](https://www.ethereum.org/)
 
 ## Running geth
 
@@ -26,19 +26,21 @@
 #### Mac
 * `geth --datadir ./data --rpc --ipcpath ${HOME}/Library/Ethereum/geth.ipc --nodiscover --networkid 8222017`
 
- 
+#### Open Ethereum Wallet
+
+
 ## Remote Blockchain
 
 ### Dashboard URL:
-* `http://cma.southcentralus.cloudapp.azure.com:3000/`
+* [http://cma.southcentralus.cloudapp.azure.com:3000/](http://cma.southcentralus.cloudapp.azure.com:3000/)
 
 ### Provided Account:
 
 * Address: `0x6ca393ad5e8c30e14f40c91af76bf7d79ebcbce2`
-* Password: empty string (just press enter) 
+* Password: empty string (just press enter)
 
 ### List of enodes:
-* `http://cma.southcentralus.cloudapp.azure.com:3001/enodes`
+* [http://cma.southcentralus.cloudapp.azure.com:3001/enodes](http://cma.southcentralus.cloudapp.azure.com:3001/enodes)
 
 ```
 [
