@@ -1,0 +1,14 @@
+{
+    "config": {
+        "chainId": 8222017
+    },
+    "difficulty": "0x20000",
+    "gasLimit": "0x493E00",
+    "alloc": {
+        "0x6ca393ad5e8c30e14f40c91af76bf7d79ebcbce2": {
+            "balance": "1000000000000000000000000"
+        }
+    }
+}
+
+
