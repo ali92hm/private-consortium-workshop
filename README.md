@@ -33,6 +33,10 @@
 * Address: `0xae57095f12fb7e760532eea08486153497f42430`
 * Password: empty string (just press enter)
 
+* Address: `0x62daa5f6974331eebab3970e19598f0e279cfb85`
+* Password: `2017`
+
+
 ### Network id:
 * `8222017`
 
