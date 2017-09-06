@@ -1,4 +1,4 @@
-# Set up a local geth private consortium
+# Setting up a local geth private consortium
 
 This workshop walks you through setting up a private consortium of geth clients with three members. You can read the [official documentation](https://github.com/ethereum/go-ethereum/wiki/Private-network) on ethereum private networks.
 
@@ -44,11 +44,11 @@ geth --datadir ./node-1 --mine --minerthreads 2 --nodekey node-1/node.key --netw
 
 Now you are running a geth node with mining enabled. At this point your geth client is generating the [DAG](https://github.com/ethereum/wiki/wiki/Mining#ethash-dag).
 
-![init success logs](pictures/generating-dag.png)
+![generating dag logs](pictures/generating-dag.png)
 
 Once dag is generated, your miner will start making blocks. All the ether generated from the miner will be deposited in `0xae57095f12fb7e760532eea08486153497f42430` account. The ether on private networks don't have any monetary value.
 
-![init success logs](pictures/mining.png)
+![mining logs](pictures/mining.png)
 
 ## Node 2: transaction node in console mode
 Open a **new** terminal window and run the following commands:
@@ -65,7 +65,7 @@ geth --datadir ./node-2 --port 30304 --networkid <your network id> console
 ```
 By running this command, your second node will connect to the miner and download all the created blocks.
 
-![init success logs](pictures/syncing.png)
+![syncing logs](pictures/syncing.png)
 
 Your second node uses the `node-2/static-nodes.json` file to find the address of the first node. `geth` 
 has a built-in discovery method, but it takes some time for nodes to discover one another. So we give them a little hint to speed things up.
@@ -92,7 +92,7 @@ geth --datadir ./node-3 --port 30305 --ipcpath ${HOME}/Library/Ethereum/geth.ipc
 ## Attaching the Ethereum or Mist wallet
 Now you can open the Ethereum or mist wallet. 
 
-![init success logs](pictures/wallet.png)
+![wallet screenshot](pictures/wallet.png)
 
 
 The wallet by default will look for an `IPC` socket opened by geth in order to communicate. If there is no `IPC` socket in the expected path (`\\.\pipe\geth.ipc` on Windows and `${HOME}/Library/Ethereum/geth.ipc` on mac) the wallet will run its own `geth` process to connect to the main network or the test network.
@@ -117,3 +117,8 @@ The wallet by default will look for an `IPC` socket opened by geth in order to c
     * Address: `0x62daa5f6974331eebab3970e19598f0e279cfb85`
     * Password: `2017`
 
+## Resetting everything
+To reset everything you can:
+
+* a) Delete all the `geth` folders in `node-1`, `node-2`, and `node-3` directory
+* b) Or do it the easier way `git clean -xdf`. This command removes all files that are not tracked by git
